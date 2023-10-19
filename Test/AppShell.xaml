@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Test.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Test"
+    Shell.FlyoutBehavior="Flyout"
+    Title="Test">
+
+        <FlyoutItem Title="Basic Page">
+            <ShellContent ContentTemplate="{DataTemplate local:BasicCalculatorPage}" Route="BasicCalculatorPage" />
+        </FlyoutItem>
+        <FlyoutItem Title="Advanced Page">
+            <ShellContent ContentTemplate="{DataTemplate local:AdvancedCalculatorPage}" Route="AdvancedCalculatorPage" />
+        </FlyoutItem>
+    <FlyoutItem Title="About">
+        <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" Route="AboutPage" />
+    </FlyoutItem>
+
+    <MenuItem Text="Light Color Scheme" Clicked="OnLightColorSchemeClicked" />
+    <MenuItem Text="Dark Color Scheme" Clicked="OnDarkColorSchemeClicked" />
+    <MenuItem Text="Red Scheme" Clicked="OnRedColorSchemeClicked" />
+    <MenuItem Text="Pink Scheme" Clicked="OnPinkColorSchemeClicked" />
+
+</Shell>

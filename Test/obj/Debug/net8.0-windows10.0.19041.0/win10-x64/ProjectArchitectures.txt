@@ -1,0 +1,1 @@
+C:\Documents\Wichita State University\Fall_2023\cross-platform\project 2\Test\maui\Test\Test.csproj;x64
